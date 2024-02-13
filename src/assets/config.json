@@ -1,6 +1,6 @@
 {
   "code": 0,
-  "mes": "ok",
+  "mes": "bad req",
   "data": {
     "heroesUrl": "api/heroes",
     "textfile": "assets/textfile.txt",

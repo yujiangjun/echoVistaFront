@@ -1,20 +1,16 @@
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpErrorResponse, HttpParams} from "@angular/common/http";
 import {catchError, Observable, throwError} from "rxjs";
-
+import {NzMessageService} from "ng-zorro-antd/message";
 @Injectable()
 export class ApiService {
 
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient, private message:NzMessageService) {
   }
 
   private handleError(error: HttpErrorResponse) {
-    if (error.status === 0) {
-      console.log('An error occurred:', error)
-    } else {
-      console.error(`Backend return code ${error.status},body was:`, error.error)
-    }
+    this.message.error(`Backend return code ${error.status},body was:${error.error}`)
     return throwError(() => new Error('Something bad happened;please try again later.'));
   }
 

@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {ApiService} from "./api.service";
+import {ApiService} from "../../config/api.service";
 
 export interface Config {
   heroesUrl: string;
