@@ -27,4 +27,8 @@ export class ApiService {
   post<K,T>(url: string, data: K): Observable<T> {
     return this.httpClient.post<T>(url, data).pipe(catchError(this.handleError));
   }
+
+  loginBaseUrl(): string{
+    return "http://localhost:8003/"
+  }
 }
