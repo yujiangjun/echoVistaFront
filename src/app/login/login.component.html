@@ -1,4 +1,11 @@
 
+<div nz-row>
+  <div nz-col nzSpan="16">
+    <img nz-image [nzSrc]="backImageUrl" alt="未正确加载" class="logo"/>
+  </div>
+
+
+  <div nz-col nzSpan="6" nzOffset="2">
     <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
       <nz-form-item>
         <nz-form-control nzErrorTip="Please input your username!">
@@ -28,4 +35,8 @@
       Or
       <a>register now!</a>
     </form>
-  
+  </div>
+</div>
+
+
+

@@ -8,6 +8,8 @@ import {NzInputDirective, NzInputGroupComponent} from "ng-zorro-antd/input";
 import {NzColDirective, NzRowDirective} from "ng-zorro-antd/grid";
 import {NzCheckboxComponent} from "ng-zorro-antd/checkbox";
 import {NzButtonComponent} from "ng-zorro-antd/button";
+import {NzImageViewComponent} from "ng-zorro-antd/experimental/image";
+import {NzImageDirective} from "ng-zorro-antd/image";
 
 
 
@@ -27,7 +29,9 @@ import {NzButtonComponent} from "ng-zorro-antd/button";
     NzInputDirective,
     NzRowDirective,
     NzCheckboxComponent,
-    NzButtonComponent
+    NzButtonComponent,
+    NzImageViewComponent,
+    NzImageDirective
   ],
   exports:[
     LoginComponent

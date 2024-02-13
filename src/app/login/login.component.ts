@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, NonNullableFormBuilder, Validators } from '@angular/forms';
+import {NzImageService} from "ng-zorro-antd/image";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  providers: [NzImageService]
 })
 export class LoginComponent {
+  backImageUrl="../../assets/logo.png"
   validateForm: FormGroup<{
     userName: FormControl<string>;
     password: FormControl<string>;
