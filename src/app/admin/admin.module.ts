@@ -6,6 +6,8 @@ import { BaseComponent } from './base/base.component';
 import {NzContentComponent, NzHeaderComponent, NzLayoutComponent, NzSiderComponent} from "ng-zorro-antd/layout";
 import {NzMenuDirective, NzMenuItemComponent, NzSubMenuComponent} from "ng-zorro-antd/menu";
 import {NzIconDirective} from "ng-zorro-antd/icon";
+import {NzImageDirective} from "ng-zorro-antd/image";
+import {NzTypographyComponent} from "ng-zorro-antd/typography";
 
 
 
@@ -24,7 +26,9 @@ import {NzIconDirective} from "ng-zorro-antd/icon";
     NzIconDirective,
     NzContentComponent,
     NzSubMenuComponent,
-    NzMenuItemComponent
+    NzMenuItemComponent,
+    NzImageDirective,
+    NzTypographyComponent
   ],
   exports: [
     Index3Component
